@@ -1,7 +1,6 @@
 import React from 'react';
 import { Carousel } from 'react-responsive-carousel';
 
-
 const App = () => (
   <div style={{ padding: '10px', margin: 'auto-margin', fontSize: '1.5em' }}>
     <Carousel infiniteLoop autoPlay swipeable={false} thumbWidth={1}>
@@ -22,6 +21,9 @@ const App = () => (
       </div>
     </Carousel>
   </div >
-);
+)
+
+
+
 
 export default App;
