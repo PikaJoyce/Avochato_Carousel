@@ -1,3 +1,4 @@
 node_modules
 package-lock.json
-client/dist/
+client/dist/bundle.js
+part2/.DS_Store

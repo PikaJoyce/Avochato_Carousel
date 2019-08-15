@@ -1,7 +1,7 @@
 import React from 'react';
 import { Carousel } from 'react-responsive-carousel';
 
-const App = () => (
+const carousel = () => (
   <div style={{ padding: '10px', margin: 'auto-margin', fontSize: '1.5em' }}>
     <Carousel infiniteLoop autoPlay swipeable={false} thumbWidth={1}>
       <div>
@@ -20,10 +20,8 @@ const App = () => (
         <img src="http://lorempixel.com/output/food-q-c-400-200-5.jpg" />
       </div>
     </Carousel>
-  </div >
+  </div>
 )
 
 
-
-
-export default App;
+export default carousel;
