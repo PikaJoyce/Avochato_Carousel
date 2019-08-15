@@ -1,11 +1,77 @@
 <!DOCTYPE html>
   <head>
-    <title>React Carousel</title>
   </head>
   <body>
+    <button class="forReact">React Carousel</button>
+    <button class="forVanilla">Vanilla Carousel</button>
     <div id="react"></div>
+    <div id="vanilla">
+      <div class="container">
+        <div class="mySlides">
+          <div class="numbertext">1 / 6</div>
+            <img src="http://lorempixel.com/output/cats-q-c-500-300-1.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">2 / 6</div>
+            <img src="http://lorempixel.com/output/cats-q-c-500-300-2.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">3 / 6</div>
+            <img src="http://lorempixel.com/output/cats-q-c-500-300-3.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">4 / 6</div>
+            <img src="http://lorempixel.com/output/cats-q-c-500-300-4.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">5 / 6</div>
+            <img src="http://lorempixel.com/output/cats-q-c-500-300-5.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">6 / 6</div>
+            <img src="http://lorempixel.com/output/cats-q-c-500-300-6.jpg" style="width:100%">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+        
+        <div class="row">
+          <div class="column">
+            <img class="demo cursor" src="http://lorempixel.com/output/cats-q-c-500-300-1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Cat 1">
+          </div>
+          <div class="column"> 
+            <img class="demo cursor" src="http://lorempixel.com/output/cats-q-c-500-300-2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cat 2">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="http://lorempixel.com/output/cats-q-c-500-300-3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Cat 3">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="http://lorempixel.com/output/cats-q-c-500-300-4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Cat 4">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="http://lorempixel.com/output/cats-q-c-500-300-5.jpg" style="width:100%" onclick="currentSlide(5)" alt="Cat 5">
+          </div> 
+          <div class="column">
+            <img class="demo cursor" src="http://lorempixel.com/output/cats-q-c-500-300-6.jpg" style="width:100%" onclick="currentSlide(6)" alt="Cat 6">
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
     <script type="text/javascript" src="client/dist/bundle.js"></script>
-    <a href="/Users/pikajoyce/Avochato_Carousel/vanilla.html">Click for Vanilla</a>
+    <script type="text/javascript" src="part2/Carousel.js"></script>
+    <link rel="stylesheet" type="text/css" href="part2/css/style.css">
   </body>
 </html>
-

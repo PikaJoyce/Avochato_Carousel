@@ -1,12 +1,10 @@
 var slideIndex = 1;
 showSlides(slideIndex);
 
-// Next/previous controls
 function plusSlides(n) {
   showSlides(slideIndex += n);
 }
 
-// Thumbnail image controls
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }
@@ -36,3 +34,20 @@ function showSlides(n) {
 setInterval(() => {
   plusSlides(1)
 }, 2000);
+
+
+$(function () {
+    $("#react, #vanilla").hide();
+    
+    $(".forReact, .forVanilla").bind("click", function () {
+
+      $("#react, #vanilla").hide(); 
+
+      if ($(this).attr("class") == "forReact") {
+        $("#react").show();
+      }
+      else { 
+        $("#vanilla").show();
+      }
+    });
+});
